@@ -6,52 +6,52 @@ Built by https://www.blackbox.ai
 # 网站选择器 (Website Selector)
 
 ## Project Overview
-网站选择器是一个简单的网页应用，旨在提供多个热门网站的快速访问。用户可以通过点击卡片直接在应用内查看网站内容，或者在安全限制无法显示的情况下，在新标签页中打开网站。
+网站选择器 (Website Selector) is a web application that allows users to easily navigate to popular websites. Built using HTML, CSS, and JavaScript, this project features a card-based interface where users can click on website cards to load them in a modal iframe. The selected website is displayed within the app, enhancing user experience by keeping them within the application while accessing content from popular web sources.
 
 ## Installation
-To run the website on your local machine, follow these steps:
+To get started with the 网站选择器 project, you need to clone the repository to your local machine:
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
+```bash
+git clone [REPOSITORY_URL]
+```
 
-2. **Open the `index.html` file**
-   You can open the `index.html` file directly in your web browser. No additional server setup is needed.
+Then, navigate to the project directory:
+
+```bash
+cd website-selector
+```
+
+After cloning, open the `index.html` file in your preferred web browser to view and interact with the application.
 
 ## Usage
-1. Open the `index.html` file in your web browser.
-2. Click on any of the website cards (e.g., Google, Baidu, etc.) to load the website in a modal window.
-3. If the website cannot be loaded due to security restrictions, click the button to open it in a new tab.
+1. Launch the application by opening `index.html` in a web browser.
+2. Click on any of the displayed website cards to load the respective website in a modal.
+3. If the website doesn't load due to security restrictions, an option to open it in a new tab will be provided.
 
 ## Features
-- Grid layout for easy access to websites.
-- Smooth animations and hover effects for an engaging user experience.
-- Responsive design that adapts to different screen sizes.
-- Modal for displaying websites with fallback to opening in new tabs if needed.
+- Responsive design with a modern card interface.
+- Clickable cards that load websites in an overlay modal.
+- Error handling for inaccessible websites, providing users with an alternative link.
+- Smooth animations for hover effects to enhance user interaction.
 
 ## Dependencies
-This project uses [Tailwind CSS](https://tailwindcss.com) for styling. The CDN link is included in the `index.html` file. No additional dependencies are required.
+This project utilizes Tailwind CSS for styling. The CSS framework is linked via CDN in the HTML file.
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+```
 
 ## Project Structure
+The project is structured as follows:
+
 ```
-.
-├── index.html         # Main HTML file for the website selector
+/website-selector
+|-- index.html       # Main HTML file containing application structure and logic
 ```
 
-### CSS & Styling
-- Using Tailwind CSS for utility-first styling.
-- Custom CSS styles defined within the `<style>` tag in the HTML for specific layout needs, such as grid display and hover effects.
+### File Descriptions
+- **index.html**: Contains the HTML structure of the application, along with CSS styling and JavaScript functionality. The file defines the layout of the site selector and implements the logic for loading external websites into a modal.
 
-### JavaScript
-- Inline JavaScript functions for loading websites and handling modals:
-  - `loadWebsite(url)` – loads the selected website into an iframe.
-  - `showErrorMessage(url)` – displays an error message if the website cannot be loaded.
-  - `closeWebsite()` – closes the modal and resets the iframe.
-
-## Contributing
-If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
+## Conclusion
+The 网站选择器 project is a sleek, user-friendly web application that simplifies access to popular websites through a card-based interface. With minimal setup, users can explore multiple online resources efficiently. Feel free to contribute or customize the project as you see fit!
